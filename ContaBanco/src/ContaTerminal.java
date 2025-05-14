@@ -12,7 +12,8 @@ public class ContaTerminal {
     public static void main(String[] args)  {
         int numeroConta;
         String agencia;
-        String nomeCliente;
+        String primeiroNome;
+        String segundoNome;
         double saldo;
 
        
@@ -30,14 +31,16 @@ public class ContaTerminal {
           agencia = scanner.next();  
      
     
-        System.out.println("Digite seu nome .");
-        nomeCliente = scanner.next();
+        System.out.println("Digite seu primeiro nome .");
+        primeiroNome = scanner.next();
+        System.out.println("Digite seu segundo nome .");
+        segundoNome = scanner.next();
         
        System.out.println("Por favor, digite o saldo da Conta!");
         saldo = scanner.nextDouble();
 
-         System.out.println("Olá " + nomeCliente + 
-                          ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + 
+         System.out.println("Olá " +  primeiroNome + " " +  segundoNome  + 
+                           ", obrigado por criar uma conta em nosso banco, sua agência é " + agencia + 
                           ", conta " + numeroConta + 
                           " e seu saldo " + saldo + 
                           " já está disponível para saque");
